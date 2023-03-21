@@ -2,6 +2,7 @@
 
 /**
  * times_table - Prints the 9 time table, starting with 0
+ *
  * Return: empty output
  */
 
