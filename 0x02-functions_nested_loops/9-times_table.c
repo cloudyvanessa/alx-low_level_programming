@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * times_table - Prints the 9 time table, starting with 0
+ * times_table - Prints the 9 times_table, starting with 0
  *
  * Return: empty output
  */
 
 void time_table(void);
 {
+
 	int x, y, z, u, d;
 
 	for (x = 0; x <= 9; x++)
