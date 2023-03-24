@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	char c;
+	_putchar c;
 
 	for (c = '0'; c <= '9'; c++)
 	{
@@ -16,3 +16,4 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
+
