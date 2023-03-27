@@ -1,24 +1,24 @@
-#include <stdio.h>
-
-#define LEN 4
-
-void _memset(char *s, char c, int len);
-
-char *_strcpy(char *dest, char *src);
+#include "main.h"
 
 /**
- * main - check the code 
- * Return: Always 0.
+ * char *_strcpy - a function that copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
  */
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-	char cpy[LEN + 1] = {0};
-	char *str;
-	char *ret;
+	int i = 0;
+	int x = 0;
 
-	_memset(cpy, 'H', LEN);
-	str = "Z";
-	ret = _strcpy(cpy, str);
-	printf("%s\n%s\n%s\n", str, cpy, ret);
-	return (0);
+	while (*(src + i) != '\0')
+	{
+		i++;
+	}
+	for ( ; x < i ; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[i] = '\0';
+	return (dest);
 }
